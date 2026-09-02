@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <label for="name">Full Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            minlength="3"
+            maxlength="50"
+            placeholder="Enter name"
+            required
+        >
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email"
+            required
+        >
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            minlength="8"
+            required
+        >
+
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="100"
+            required
+        >
+
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+        >
+
+        <br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input
+            type="file"
+            id="resume"
+            name="resume"
+            required
+        >
+
+        <br><br>
+
+        <p>Select your skills:</p>
+
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        <label for="javascript">JavaScript</label>
+
+        <br><br>
+
+        <p>Select Gender:</p>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            required
+        >
+        <label for="male">Male</label>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+        >
+        <label for="female">Female</label>
+
+        <input
+            type="radio"
+            id="other"
+            name="gender"
+            value="other"
+        >
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <label for="course">Select Course:</label>
+
+        <select id="course" name="course" required>
+
+            <option value="">Select a course</option>
+
+            <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+
+            <optgroup label="Backend">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="node">Node.js</option>
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <label for="message">About Yourself:</label>
+
+        <textarea
+            id="message"
+            name="message"
+            minlength="10"
+            maxlength="200"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <label for="experience">Experience Level:</label>
+
+        <input
+            type="range"
+            id="experience"
+            name="experience"
+            min="0"
+            max="10"
+            value="5"
+        >
+        <br><br>
+        
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
